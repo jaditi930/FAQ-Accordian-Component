@@ -18,7 +18,7 @@ body{
 }
 .accordian{
     width: 35vw;
-    min-width: 600px;
+    min-width: 375px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     padding: 30px;
@@ -27,7 +27,7 @@ body{
     font-size: 35px;
     font-weight: 700;
 }
-.q{
+.ques{
     position: relative;
 
 }
@@ -56,9 +56,25 @@ body{
 }
 .star{
     position: relative;
-    top:10px;
+    top:15px;
     padding: 7px;
 }
-.ans{
+.hide{
     display: none;
+}
+.ques >span{
+    display: inline-block;
+    width: 95%;
+}
+
+@media (max-width:375px) {
+    body{
+        background-image: url('./assets/images/background-pattern-mobile.svg')
+    }
+    .accordian
+    {
+        width: 90vw;
+        min-width:0px;
+    }
+    
 }
